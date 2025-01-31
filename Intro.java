@@ -12,7 +12,7 @@
 // TIPI DI DATI primitivi e reference
 
 // starting java
-public class Main {
+public class Intro {
     public static void main(String[] args) {
         System.out.println("Ciao da main");
         System.out.println("Ciao da main2");

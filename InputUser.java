@@ -9,12 +9,14 @@ public class InputUser {
         System.out.println("Piacere di conoscerti " + nome);
 
         System.out.println("Quanti anni hai?");
-        int eta = scanner.nextInt();
+        int eta = scanner.nextInt(); // int non crea nuova riga
         scanner.nextLine();
 
         System.out.println("Hai " + eta + " anni.. e dove vivi?");
         String citta = scanner.nextLine();
         System.out.println("Quindi vivi a " + citta + ".. ora ho tutti i dati che mi occorrono, grazie " + nome);
+
+        scanner.close(); // Chiudo Scanner per evitare il warning
 
     }
 }
