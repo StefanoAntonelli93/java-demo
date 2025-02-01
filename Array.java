@@ -68,6 +68,7 @@ public class Array {
         /********** ARRAY LIST **************/
         // array ridimensionabili, accettano solo reference, no primitivi.
         // con wrapper classes primitivi diventano reference -> int = Integer
+
         // Dichiarazione e inizializzazione di un ArrayList di Stringhe
         ArrayList<String> programs = new ArrayList<>();
 
@@ -77,7 +78,8 @@ public class Array {
         programs.add("C++");
 
         programs.remove(0); // rimuovo Java
-        int list = programs.size();
+
+        int list = programs.size(); // numero di elementi in collezione
         System.out.println("programmi scaricati su questo PC: " + list);
 
         System.out.println(programs); // Output: [Java, Python, C++]
