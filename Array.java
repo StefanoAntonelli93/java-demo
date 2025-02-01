@@ -18,7 +18,7 @@ public class Array {
         // numbers[1] = 20;
         // numbers[2] = 30;
 
-        int[] numbers = { 10, 20, 30, 40, 50 };
+        int[] numbers = { 10, 20, 30, 40, 50 }; // array
 
         System.out.println(numbers[2]);
 
@@ -38,5 +38,28 @@ public class Array {
             System.out.println(number);
         }
 
+        /********** ARRAY 2D MULTIDIMENSIONALI **************/
+        // String[][] classi = new String[3][5]; // 3 classi 5 studenti
+
+        String[][] teams = {
+                { "Hulk", "IronMan" },
+                { "Superman", "Loki" },
+                { "Batman", "Spiderman" },
+        };
+        System.err.println(teams[0][1]); // stampo Ironman
+
+        for (int team = 0; team < teams.length; team++) {
+            System.out.println();
+            for (int hero = 0; hero < teams[team].length; hero++) {
+                System.out.println(teams[team][hero]); // in javascipt teams.team.hero
+            }
+        }
+
+        for (String[] team : teams) {
+            System.out.println();
+            for (String hero : team) {
+                System.out.println(hero);
+            }
+        }
     }
 }
