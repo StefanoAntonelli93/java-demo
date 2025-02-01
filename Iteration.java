@@ -26,7 +26,7 @@ public abstract class Iteration {
             }
         }
 
-        // FOR EACH
+        // FOR EACH scorre elementi di una collezione - array o lista -
         int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         for (int number : numbers) {
             if (number == 8) {
