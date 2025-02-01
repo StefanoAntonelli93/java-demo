@@ -1,18 +1,19 @@
+
 /*
  * 
  * ARRAY -> collezione di dati
- * 
+ *  a differenza di javascript arraylist gli array
+    di java hanno dimensione fissa
+    non puoi aggiungere elementi
+
  * 
  */
+import java.util.ArrayList;
 
 public class Array {
     public static void main(String[] args) {
 
         // int[] numbers = new int[3];
-
-        // a differenza di javascript arraylist gli array
-        // di java hanno dimensione fissa
-        // // non puoi aggiungere elementi
 
         // numbers[0] = 10;
         // numbers[1] = 20;
@@ -46,7 +47,7 @@ public class Array {
                 { "Superman", "Loki" },
                 { "Batman", "Spiderman" },
         };
-        System.err.println(teams[0][1]); // stampo Ironman
+        System.out.println(teams[0][1]); // stampo Ironman
 
         for (int team = 0; team < teams.length; team++) {
             System.out.println();
@@ -61,5 +62,25 @@ public class Array {
                 System.out.println(hero);
             }
         }
+
+        System.out.println("\n-----------------------------\n");
+
+        /********** ARRAY LIST **************/
+        // array ridimensionabili, accettano solo reference, no primitivi.
+        // con wrapper classes primitivi diventano reference -> int = Integer
+        // Dichiarazione e inizializzazione di un ArrayList di Stringhe
+        ArrayList<String> programs = new ArrayList<>();
+
+        // Aggiunta di elementi
+        programs.add("Java");
+        programs.add("Python");
+        programs.add("C++");
+
+        programs.remove(0); // rimuovo Java
+        int list = programs.size();
+        System.out.println("programmi scaricati su questo PC: " + list);
+
+        System.out.println(programs); // Output: [Java, Python, C++]
+
     }
 }
