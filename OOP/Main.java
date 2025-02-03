@@ -1,11 +1,12 @@
 package OOP;
 
-public class OOP {
+public class Main {
     public static void main(String[] args) {
         // creo oggetto persona1 aggiungo parametri al costruttore
-        Persona persona1 = new Persona("Stefano", "Antonelli", 31, false);
-        persona1.name = "Stefanino"; // modifico nome
-        System.out.println(persona1.name + " ha " + persona1.eta + " anni");
+        Persona persona1 = new Persona("Stefano", "Antonelli", 31);
+        persona1.lastName = "Antonellino"; // modifico cognome
+        persona1.setName("Stefanino"); // modifico nome privato con setter
+        System.out.println(persona1.getName() + " ha " + persona1.eta + " anni");// stampo attributo nome con getter
         persona1.saluta(); // invoco metodo
 
         // creo oggetto persona2
@@ -41,5 +42,9 @@ public class OOP {
         // invoco metodi con override, sovrascrivo metodo superclasse
         prof1.saluta();
         student1.saluta();
+
+        // metodi classe astratta vehicle - car
+        Car car1 = new Car();
+        car1.move();
     }
 }

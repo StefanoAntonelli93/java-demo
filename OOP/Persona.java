@@ -2,7 +2,7 @@ package OOP;
 
 // creo classe Persona
 public class Persona {
-    String name;
+    private String name;
     String lastName;
     int eta;
     boolean isSingle;
@@ -17,6 +17,15 @@ public class Persona {
         this.eta = eta;
         numeroPersone++;
 
+    }
+
+    // GETTER SETTER
+    public String getName() { // ritorna valore dell'attributo
+        return name;
+    }
+
+    public void setName(String name) { // seleziona attributo
+        this.name = name;
     }
 
     // OVERLOADED COSTRUCTOR signature differenti
