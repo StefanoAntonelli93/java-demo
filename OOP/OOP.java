@@ -6,7 +6,7 @@ public class OOP {
         Persona persona1 = new Persona("Stefano", "Antonelli", 31, false);
         persona1.name = "Stefanino"; // modifico nome
         System.out.println(persona1.name + " ha " + persona1.eta + " anni");
-        persona1.swim(); // invoco metodo
+        persona1.saluta(); // invoco metodo
 
         // creo oggetto persona2
         Persona persona2 = new Persona("Gabriele", "Antonelli", 25);
@@ -17,7 +17,6 @@ public class OOP {
         Persona persona4 = new Persona("Billi", "Ballo", 52);
 
         // ******ARRAY DI OGGETTI******* */
-
         Persona[] persone = { persona1, persona2, persona3, persona4 };
 
         // stampo oggetto persona in posizione 0
@@ -32,5 +31,15 @@ public class OOP {
 
         // invoco metodo statico della classe Persona
         Persona.mostraNumeroPersone();
+
+        // creo studente e prof grazie all'ereditarietò
+        Student student1 = new Student("Luca", "Ranieri", 22);
+        System.out.println(student1);
+        Prof prof1 = new Prof("Mario", "Balsami", 52, "Mathematics");
+        System.out.println(prof1.subject);
+
+        // invoco metodi con override, sovrascrivo metodo superclasse
+        prof1.saluta();
+        student1.saluta();
     }
 }

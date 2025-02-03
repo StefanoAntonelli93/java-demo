@@ -28,16 +28,8 @@ public class Persona {
     }
 
     // creo metodi per oggetto persona
-    void swim() {
-        System.out.println(name + " sta nuotando");
-    }
-
-    void fly() {
-        System.out.println(name + " sta volando");
-    }
-
-    void run() {
-        System.out.println(name + " sta correndo");
+    void saluta() {
+        System.out.println(" Ciao!");
     }
 
     // toString() ritorna rappresentazione in stringa dell'oggetto
