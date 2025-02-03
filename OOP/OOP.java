@@ -13,8 +13,8 @@ public class OOP {
         System.out.println(persona2);
 
         // creo altri due oggetti persona
-        Persona persona3 = new Persona("Sandro", "Milo", 47);
-        Persona persona4 = new Persona("Valeroi", "Michels", 52);
+        Persona persona3 = new Persona("Sandro", "Tonelli", 47);
+        Persona persona4 = new Persona("Billi", "Ballo", 52);
 
         // ******ARRAY DI OGGETTI******* */
 
@@ -24,6 +24,13 @@ public class OOP {
         System.out.println(persone[0]);
 
         // oggetto come parametro di un metodo
-        persona3.message(persona4);
+        persona3.invioMessaggio(persona4);
+
+        // controllo il numero di persone finora
+        // classe + attributo statico della classe Persona
+        System.out.println("numero di persone: " + Persona.numeroPersone);
+
+        // invoco metodo statico della classe Persona
+        Persona.mostraNumeroPersone();
     }
 }

@@ -6,16 +6,20 @@ public class Persona {
     String lastName;
     int eta;
     boolean isSingle;
+    static int numeroPersone;
+    // STATIC attributo uguale per ogni istanza
+    // FINAL la variabile non può cambiare il suo valore, è allo stato finale
 
     // COSTRUTTORE
     Persona(String name, String lastName, int eta) {
         this.name = name;
         this.lastName = lastName;
         this.eta = eta;
+        numeroPersone++;
 
     }
 
-    // OVERLOADED COSTRUCTOR
+    // OVERLOADED COSTRUCTOR signature differenti
     Persona(String name, String lastName, int eta, boolean isSingle) {
         this.name = name;
         this.lastName = lastName;
@@ -43,9 +47,13 @@ public class Persona {
     }
 
     // oggetto come parametro di un metodo
-
-    void message(Persona destinatario) {
+    void invioMessaggio(Persona destinatario) {
         System.out.println(this.name + " " + this.lastName + " invia un messaggio a: " + destinatario.name + " "
                 + destinatario.lastName);
+    }
+
+    // metodo STATIC uguale per tutte le instanze
+    static void mostraNumeroPersone() {
+        System.out.println(numeroPersone);
     }
 }
