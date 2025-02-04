@@ -1,0 +1,4 @@
+Prima riga del file Prova.txt
+Seconda riga
+terza riga
+quarta riga -> aggiungo qualcosa alla quarta riga
