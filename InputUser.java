@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class InputUser {
@@ -26,11 +27,17 @@ public class InputUser {
             int result = x / y;
             System.out.println("risultato divisione: " + result);
 
-        } catch (Exception e) {
+        } catch (ArithmeticException e) {
             // TODO: handle exception
             System.out.println("non puoi dividere per zero");
+        } catch (InputMismatchException e) {
+            System.out.println("La divisione accetta solo numeri");
+        } catch (Exception e) {
+            System.out.println("errore generico");
+        } finally {
+            System.out.println("eseguito lo stesso, scanner chiuso");
+            scanner.close(); // Chiudo Scanner per evitare il warning
         }
 
-        scanner.close(); // Chiudo Scanner per evitare il warning
     }
 }
