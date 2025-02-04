@@ -9,6 +9,7 @@
  * 
  */
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Array {
     public static void main(String[] args) {
@@ -83,6 +84,14 @@ public class Array {
         System.out.println("programmi scaricati su questo PC: " + list);
 
         System.out.println(programs); // Output: [Java, Python, C++]
+
+        // ITERATORE meglio dei cicli for loop per Array List
+        Iterator<String> it = programs.iterator();
+
+        while (it.hasNext()) { // finchè ci sono elementi
+            String program = it.next();
+            System.out.println(program);
+        }
 
     }
 }
