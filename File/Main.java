@@ -23,12 +23,16 @@ public class Main {
 
         // creare un file
         try {
-            FileWriter writer = new FileWriter("prova.txt");// se non trova file lo crea
-            writer.write("Prima riga del file Prova.txt"); // scrivi nel file
-            writer.append("\nSeconda riga"); // agginugo seconda riga
-            writer.append("\nterza riga");
-            writer.append("\nquarta riga");
-            writer.append(" -> aggiungo qualcosa alla quarta riga");
+            FileWriter writer = new FileWriter("utility.txt");// se non trova file lo crea
+            writer.write("Utility"); // scrivi nel file
+            writer.append(
+                    "\nSDKMAN! (Software Development Kit Manager) è un gestore di versioni per strumenti e SDK legati allo sviluppo in Java. Ti permette di installare, aggiornare e gestire diverse versioni di JDK, Maven, Gradle, Spring Boot e altri strumenti con semplici comandi.\r\n"
+                            + //
+                            "Perché usare SDKMAN?\r\n" + //
+                            "\r\n" + //
+                            "✅ Installa e aggiorna facilmente strumenti Java\r\n" + //
+                            "✅ Passa rapidamente tra diverse versioni di JDK o altri SDK\r\n" + //
+                            "✅ Funziona su Windows, macOS e Linux"); // agginugo seconda riga
             writer.close(); // chiudi file
         } catch (IOException e) {
             // TODO: handle exception

@@ -1,0 +1,11 @@
+Utility
+SDKMAN! (Software Development Kit Manager) è un gestore di versioni per strumenti e SDK legati allo sviluppo in Java. Ti permette di installare, aggiornare e gestire diverse versioni di JDK, Maven, Gradle, Spring Boot e altri strumenti con semplici comandi.
+Perché usare SDKMAN?
+
+✅ Installa e aggiorna facilmente strumenti Java
+✅ Passa rapidamente tra diverse versioni di JDK o altri SDK
+✅ Funziona su Windows, macOS e Linux
+
+installare JDK
+installare Maven 
+installare Springboot
